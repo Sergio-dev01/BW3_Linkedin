@@ -1,5 +1,10 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import ProfileCard from "./ProfileCard";
+import ConsigliatoPerTe from "./ConsigliatoPerTe";
+import SecondCard from "./SecondCard";
+import FormazioneCard from "./FormazioneCard";
+import AsidePrimoComponente from "./AsidePrimoComponente";
+import AsideSecondoComponente from "./AsideSecondoComponente";
 
 const MainContent = () => {
   return (
@@ -7,8 +12,14 @@ const MainContent = () => {
       <Row className="justify-content-center">
         <Col md={8}>
           <ProfileCard />
+          <ConsigliatoPerTe/>
+          <SecondCard/>
+          <FormazioneCard/>
         </Col>
-        <Col md={4}>{/* <ProfileCard /> */}</Col>
+        <Col md={4}>
+        <AsidePrimoComponente/>
+        <AsideSecondoComponente/>
+        </Col>
       </Row>
     </Container>
   );
