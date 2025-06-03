@@ -6,7 +6,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 const Footer = () => {
   return (
     <Row className="justify-content-center">
-      <Col xs={3}>
+      <Col xs={4}>
         <Row>
           <Col xs={4}>
             <ListGroup.Item id="footer-item">Informazioni</ListGroup.Item>
@@ -64,7 +64,7 @@ const Footer = () => {
         </Row>
         <p className=" text-muted small fw-light ">LinkedIn Corporation © 2025</p>
       </Col>
-      <Col xs={3}>
+      <Col xs={4}>
         <Row>
           <Col xs={6}>
             <ListGroup.Item id="footer-item">
