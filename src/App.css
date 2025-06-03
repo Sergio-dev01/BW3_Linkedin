@@ -1,0 +1,51 @@
+.navbar-container {
+  border: 0.5px solid lightgray;
+}
+
+.navbar {
+  width: 70%;
+  height: 55px;
+  margin-inline: auto;
+}
+
+.img-fluid {
+  width: 35px;
+  height: 35px;
+}
+
+.navbar-form {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  width: 18rem;
+}
+
+.navbar-icons {
+  width: 80px;
+  height: 55px;
+  cursor: pointer;
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.left-navbar {
+  border-right: 0.5px solid lightgray;
+  width: 70%;
+  gap: 4rem;
+}
+
+.business {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #5c3a0a;
+  font-size: 0.8rem;
+}
+
+.navbar-icons .dropdown-toggle::after,
+#dropdown-user::after {
+  display: none !important;
+}

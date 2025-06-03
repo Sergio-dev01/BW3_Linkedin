@@ -1,0 +1,207 @@
+import { Button, Col, Container, Dropdown, Form, Image, InputGroup, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
+import { CaretDownFill, Search } from "react-bootstrap-icons";
+
+const TopBar = function () {
+  return (
+    <Container fluid className="navbar-container">
+      <Navbar expand="lg" className="navbar navbar-expand-lg py-0">
+        <div className="d-flex w-100 align-items-center left-navbar">
+          <div className="d-flex align-items-center">
+            <Navbar.Brand href="#" className="me-2">
+              <Image className="img-fluid" style={{ width: "35px" }} src="public/LinkedIn_logo_initials.png" alt="logo" />
+            </Navbar.Brand>
+            <Form inline>
+              <Row>
+                <Col xs="auto">
+                  <InputGroup className="navbar-form border-0">
+                    <InputGroup.Text className="border-end-0 pe-1 bg-transparent border-0">
+                      <Search className="text-muted" />
+                    </InputGroup.Text>
+                    <Form.Control type="text" placeholder="Cerca" className="bg-transparent border-0 shadow-none" />
+                  </InputGroup>
+                </Col>
+              </Row>
+            </Form>
+          </div>
+          <div className="d-flex align-items-center">
+            <Navbar.Collapse id="navbarSupportedContent">
+              <Nav className="me-auto mb-2 mb-lg-0">
+                <Nav.Link className="text-dark fs-custom pb-0 navbar-icons active" href="#">
+                  <div className="d-flex flex-column justify-content-center align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      width="24"
+                      height="24"
+                      className="mercado-match"
+                      focusable="false"
+                    >
+                      <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z" />
+                    </svg>
+                    <p>Home</p>
+                  </div>
+                </Nav.Link>
+                <Nav.Link className="text-dark fs-custom pb-0 navbar-icons" href="#">
+                  <div className="d-flex flex-column justify-content-center align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="#666666"
+                      className="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                    </svg>{" "}
+                    <p>Rete</p>
+                  </div>
+                </Nav.Link>
+                <Nav.Link className="text-dark fs-custom pb-0 navbar-icons" href="#">
+                  <div className="d-flex flex-column justify-content-center align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="#666666"
+                      className="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                    </svg>{" "}
+                    <p>Lavoro</p>
+                  </div>
+                </Nav.Link>
+                <Nav.Link className="text-dark fs-custom pb-0 navbar-icons" href="#">
+                  <div className="d-flex flex-column justify-content-center align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="#666666"
+                      className="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                    </svg>{" "}
+                    <p>Messaggistica</p>
+                  </div>
+                </Nav.Link>
+                <Nav.Link className="text-dark fs-custom pb-0 navbar-icons" href="#">
+                  <div className="d-flex flex-column justify-content-center align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="#666666"
+                      className="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                    </svg>
+                    <p>Notifiche</p>
+                  </div>
+                </Nav.Link>
+                <Dropdown align="end">
+                  <Dropdown.Toggle
+                    variant="link"
+                    id="dropdown-user"
+                    className="d-flex align-items-center gap-2 text-decoration-none navbar-icons"
+                    style={{ color: "black" }}
+                  >
+                    <div className="d-flex flex-column justify-content-center align-items-center">
+                      <img
+                        className="img-fluid"
+                        style={{ width: "25px", height: "25px", borderRadius: "50%" }}
+                        src="public/blank-profile.webp"
+                        alt="profileImg"
+                      />
+                      <div className="d-flex align-items-center gap-1">
+                        <p className="mb-0">Tu</p>
+                        <CaretDownFill size={12} />
+                      </div>
+                    </div>
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <div className="px-3 py-2">
+                      <strong>Davide Rocca</strong>
+                      <div className="text-muted small">--</div>
+                      <div className="d-flex gap-2 mt-2">
+                        <Button variant="outline-primary" size="sm">
+                          Visualizza profilo
+                        </Button>
+                        <Button variant="primary" size="sm">
+                          Verifica
+                        </Button>
+                      </div>
+                    </div>
+                    <Dropdown.Divider />
+                    <Dropdown.Header>Account</Dropdown.Header>
+                    <Dropdown.Item>🎁 Prova 1 mese di Premium per 0 EUR</Dropdown.Item>
+                    <Dropdown.Item>Impostazioni e privacy</Dropdown.Item>
+                    <Dropdown.Item>Guida</Dropdown.Item>
+                    <Dropdown.Item>Lingua</Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Header>Gestisci</Dropdown.Header>
+                    <Dropdown.Item>Post e attività</Dropdown.Item>
+                    <Dropdown.Item>Account per la pubblicazione di offerte</Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Item className="text-danger">Esci</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </div>
+        </div>
+        <div className="d-flex align-items-center gap-4" style={{ width: "400px" }}>
+          <NavDropdown
+            className="d-flex flex-row align-items-center navbar-icons"
+            title={
+              <div className="d-flex flex-column justify-content-center align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  data-supported-dps="24x24"
+                  fill="#666666"
+                  className="mercado-match"
+                  width="24"
+                  height="24"
+                  focusable="false"
+                >
+                  <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                </svg>
+                <div className="d-flex align-items-center gap-1 ms-2">
+                  <p className="mb-0 text-dark">Per le aziende</p>
+                  <CaretDownFill size={12} />
+                </div>
+              </div>
+            }
+            caret={false}
+            id="navbarScrollingDropdown"
+          >
+            <NavDropdown.Item href="#">Profile</NavDropdown.Item>
+            <NavDropdown.Item href="#">App Settings</NavDropdown.Item>
+            <NavDropdown.Item href="#">Help</NavDropdown.Item>
+            <NavDropdown.Item href="#">Log Out</NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link>
+            <p className="business text-center p-3 pb-0" style={{ width: "10rem" }}>
+              Prova Premium per 0 <br /> EUR
+            </p>
+          </Nav.Link>
+        </div>
+      </Navbar>
+    </Container>
+  );
+};
+
+export default TopBar;
