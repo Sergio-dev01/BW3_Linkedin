@@ -7,17 +7,12 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Container fluid>
-      <Row>
+      <Row className="justify-content-center">
         <TopBar />
-        <Col md={1} ></Col>
-       
-        <Col xs={12} md={10} >
-          
-          <MainContent />
-          
+        <Col xs={12} md={10}>
+          <MainContent className="MainContent" />
+          <Footer />
         </Col>
-        <Footer />
-        <Col md={1} ></Col>
       </Row>
     </Container>
   );

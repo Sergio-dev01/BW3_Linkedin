@@ -12,20 +12,20 @@ const MainContent = () => {
   return (
     <Container className="main-content my-4">
       <Row className="justify-content-center">
-        <Col md={8} className="ps-0">
-          <div className="d-flex flex-column gap-3">
+        <Col md={8} className="p-0">
+          <div className="d-flex flex-column gap-3 ">
             <ProfileCard />
             <ConsigliatoPerTe />
             <SecondCard />
             <FormazioneCard />
             <EsperienzeComponent />
-            <CompetenzeComponent/>
+            <CompetenzeComponent />
           </div>
         </Col>
         <Col md={4}>
-        <div className="d-flex flex-column gap-3">
-          <AsidePrimoComponente />
-          <AsideSecondoComponente />
+          <div className="d-flex flex-column gap-3 d-sm-none d-md-block">
+            <AsidePrimoComponente />
+            <AsideSecondoComponente />
           </div>
         </Col>
       </Row>
