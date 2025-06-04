@@ -10,15 +10,16 @@ const MainContent = () => {
   return (
     <Container className="main-content my-5">
       <Row className="justify-content-center">
-        <Col md={8}className="ps-0">
+        <Col md={8} className="ps-0">
           <ProfileCard />
-          <ConsigliatoPerTe/>
-          <SecondCard/>
-          <FormazioneCard/>
+
+          <ConsigliatoPerTe />
+          <SecondCard />
+          <FormazioneCard />
         </Col>
         <Col md={4}>
-        <AsidePrimoComponente/>
-        <AsideSecondoComponente/>
+          <AsidePrimoComponente />
+          <AsideSecondoComponente />
         </Col>
       </Row>
     </Container>

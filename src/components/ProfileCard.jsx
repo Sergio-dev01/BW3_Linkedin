@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Button, Badge, Image, Carousel } from "react-bootstrap";
 import MyCarousel from "./Carousel";
 import { Pencil } from "react-bootstrap-icons";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchMyProfile } from "../redux/action";
 
 const ProfileCard = () => {
+  const dispatch = useDispatch();
+
+  const { myProfile } = useSelector((state) => state.profile);
+
+  useEffect(() => {
+    dispatch(fetchMyProfile());
+  }, [dispatch]);
+  if (!myProfile) {
+    return <p>Caricamento profilo...</p>;
+  }
   return (
     <Card className="mb-3">
       <div style={{ backgroundColor: "#dfeae7", height: "150px" }} />
       <Card.Body className="text-start position-relative" style={{ marginTop: "-100px" }}>
-        <Image
-          src="https://plus.unsplash.com/premium_photo-1673967859849-c8a37fa85aeb?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          roundedCircle
-          className="border border-3"
-          style={{ width: "150px", height: "150px", objectFit: "cover" }}
-        />
+        <Image src={myProfile.image} roundedCircle className="border border-3" style={{ width: "150px", height: "150px", objectFit: "cover" }} />
 
         <Button
           variant="light"
@@ -30,11 +37,13 @@ const ProfileCard = () => {
 
         <div className="d-flex align-items-center mt-2 mb-3">
           <div className="flex-grow-1">
-            <Card.Title className="mt-2">Sergio Francesco Maselli</Card.Title>
+            <Card.Title className="mt-2">
+              {myProfile.name} {myProfile.surname}
+            </Card.Title>
             <p className="mb-0">--</p>
             <Card.Subtitle className="mb-2 text-muted">
               <div className="d-flex">
-                <p className="me-3">Bari, Puglia, Italia</p>
+                <p className="me-3">{myProfile.area}</p>
                 <a className="text-decoration-none" href="#">
                   <span>Informazioni di contatto</span>
                 </a>

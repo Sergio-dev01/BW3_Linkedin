@@ -1,16 +1,28 @@
+import { useEffect } from "react";
 import { Button, Col, Container, Dropdown, Form, Image, InputGroup, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import { CaretDownFill, Search } from "react-bootstrap-icons";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchMyProfile } from "../redux/action";
 
 const TopBar = function () {
+  const dispatch = useDispatch();
+
+  const { myProfile } = useSelector((state) => state.profile);
+
+  useEffect(() => {
+    dispatch(fetchMyProfile());
+  }, [dispatch]);
+  if (!myProfile) return <p>Nessun profilo disponibile</p>;
+  console.log(myProfile.image);
   return (
     <Container fluid className="navbar-container">
       <Navbar expand="lg" className="navbar navbar-expand-lg py-0">
         <div className="d-flex w-100 align-items-center left-navbar">
           <div className="d-flex align-items-center">
             <Navbar.Brand href="#" className="me-2">
-              <Image className="img-fluid" style={{ width: "35px" }} src="public/LinkedIn_logo_initials.png" alt="logo" />
+              <Image className="img-fluid" style={{ width: "35px" }} src="LinkedIn_logo_initials.png" alt="logo" />
             </Navbar.Brand>
-            <Form inline>
+            <Form>
               <Row>
                 <Col xs="auto">
                   <InputGroup className="navbar-form border-0">
@@ -120,8 +132,12 @@ const TopBar = function () {
                     <div className="d-flex flex-column justify-content-center align-items-center">
                       <img
                         className="img-fluid"
-                        style={{ width: "25px", height: "25px", borderRadius: "50%" }}
-                        src="public/blank-profile.webp"
+                        style={{
+                          width: "25px",
+                          height: "25px",
+                          borderRadius: "50%",
+                        }}
+                        src={myProfile.image || "blank-profile.webp"} // usa immagine dinamica
                         alt="profileImg"
                       />
                       <div className="d-flex align-items-center gap-1">
@@ -133,8 +149,8 @@ const TopBar = function () {
 
                   <Dropdown.Menu>
                     <div className="px-3 py-2">
-                      <strong>Davide Rocca</strong>
-                      <div className="text-muted small">--</div>
+                      <strong>{myProfile.name || "Nome Utente"}</strong>
+                      <div className="text-muted small">{myProfile.title || "--"}</div>
                       <div className="d-flex gap-2 mt-2">
                         <Button variant="outline-primary" size="sm">
                           Visualizza profilo
@@ -162,6 +178,7 @@ const TopBar = function () {
             </Navbar.Collapse>
           </div>
         </div>
+
         <div className="d-flex align-items-center gap-4" style={{ width: "400px" }}>
           <NavDropdown
             className="d-flex flex-row align-items-center navbar-icons"
@@ -185,7 +202,6 @@ const TopBar = function () {
                 </div>
               </div>
             }
-            caret={false}
             id="navbarScrollingDropdown"
           >
             <NavDropdown.Item href="#">Profile</NavDropdown.Item>
