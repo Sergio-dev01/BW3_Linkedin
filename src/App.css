@@ -67,3 +67,21 @@ body {
   color: #6c757d;
   padding: 0;
 }
+#card-dashed{
+  border: 2px dashed rgba(189, 187, 187, 0.599);
+  padding: 10px;
+  border-radius: 7px;
+}
+
+
+#ext-card {
+  padding: 1em;
+}
+
+.btn-font{
+  font-size: 0.75rem; 
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  white-space: nowrap; 
+  max-width: 100%;
+}

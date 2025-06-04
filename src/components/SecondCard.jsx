@@ -2,8 +2,8 @@ import { Card } from "react-bootstrap"
 
 const SecondCard=()=>{
     return(
-        <>
-            <Card>
+        <div className="mb-0">
+            <Card className="rounded-bottom-0">
                 <Card.Body>
                     <Card.Title className="mb-1">Analisi</Card.Title>
                     <Card.Subtitle className="mb-3 text-muted small">
@@ -41,10 +41,10 @@ const SecondCard=()=>{
                     </div>
                 </Card.Body>
             </Card>
-            <div className="text-center py-2 bg-white border rounded-bottom">
-                <span className="fw-bold" style={{cursor: "pointer"}}>Mostra tutte le analisi <i class="bi bi-arrow-right"></i></span>
+            <div className="text-center py-2 bg-white border border-top-0 rounded-bottom">
+                <span className="fw-bold" style={{cursor: "pointer"}}>Mostra tutte le analisi <i className="bi bi-arrow-right"></i></span>
             </div>
-        </>
+        </div>
     )
 }
 export default SecondCard

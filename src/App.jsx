@@ -9,15 +9,15 @@ function App() {
     <Container fluid>
       <Row>
         <TopBar />
-        <Col md={2} className="d-none d-md-block"></Col>
+        <Col md={1} ></Col>
        
-        <Col xs={12} md={8} >
+        <Col xs={12} md={10} >
           
           <MainContent />
           
         </Col>
         <Footer />
-        <Col md={2} className="d-none d-md-block"></Col>
+        <Col md={1} ></Col>
       </Row>
     </Container>
   );

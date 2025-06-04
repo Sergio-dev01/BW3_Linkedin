@@ -5,20 +5,28 @@ import SecondCard from "./SecondCard";
 import FormazioneCard from "./FormazioneCard";
 import AsidePrimoComponente from "./AsidePrimoComponente";
 import AsideSecondoComponente from "./AsideSecondoComponente";
+import EsperienzeComponent from "./EsperienzeComponent";
+import CompetenzeComponent from "./CompetenzeComponent";
 
 const MainContent = () => {
   return (
-    <Container className="main-content my-5">
+    <Container className="main-content my-4">
       <Row className="justify-content-center">
-        <Col md={8}className="ps-0">
-          <ProfileCard />
-          <ConsigliatoPerTe/>
-          <SecondCard/>
-          <FormazioneCard/>
+        <Col md={8} className="ps-0">
+          <div className="d-flex flex-column gap-3">
+            <ProfileCard />
+            <ConsigliatoPerTe />
+            <SecondCard />
+            <FormazioneCard />
+            <EsperienzeComponent />
+            <CompetenzeComponent/>
+          </div>
         </Col>
         <Col md={4}>
-        <AsidePrimoComponente/>
-        <AsideSecondoComponente/>
+        <div className="d-flex flex-column gap-3">
+          <AsidePrimoComponente />
+          <AsideSecondoComponente />
+          </div>
         </Col>
       </Row>
     </Container>

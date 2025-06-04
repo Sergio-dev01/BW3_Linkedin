@@ -5,13 +5,13 @@ const AsideSecondoComponente=()=>{
         <div className="bg-white border rounded-3 p-3">
             <div className="ms-3">
                 <h5 className="mb-0">Persone che potresti conoscere</h5>
-                <p className="text-muted small mb-2">Dalla tua scuola o universitÃ</p>
+                <p className="text-muted small mb-2">Dalla tua scuola o università</p>
             </div>
             <Card className="border-0 bg-transparent mb-0">
                 <Card.Body className="p-0">
                     
                     <Card className="mb-3 border-0 bg-transparent">
-                        <Card.Body>
+                        <Card.Body className="pb-0">
                             <div className="d-flex align-items-center justify-content-between mb-4">
                                 <div className="d-flex align-items-center">
                                     <img
@@ -40,7 +40,7 @@ const AsideSecondoComponente=()=>{
                 <Card.Body className="p-0">
                     
                     <Card className="mb-3 border-0 bg-transparent">
-                        <Card.Body>
+                        <Card.Body className="pb-0">
                             <div className="d-flex align-items-center justify-content-between mb-4">
                                 <div className="d-flex align-items-center">
                                     <img
