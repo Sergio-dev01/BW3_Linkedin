@@ -49,3 +49,33 @@
 #dropdown-user::after {
   display: none !important;
 }
+
+.custom-icon {
+  color: #2a67a4;
+  font-size: 2.3rem;
+}
+
+.dropdownArea {
+  width: 850px;
+}
+
+.dropdownArea2 {
+  width: 800px;
+  height: 700px;
+}
+
+.dropdownArea3 {
+  width: 375px;
+  height: 650px;
+  border-right: 1px solid lightgrey;
+}
+
+.dropdownArea4 {
+  width: 375px;
+}
+
+@media screen and (max-width: 1700px) {
+  .searchForm {
+    display: none !important;
+  }
+}
