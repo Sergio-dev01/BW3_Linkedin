@@ -33,9 +33,12 @@ const Footer = () => {
           <Col xs={4}>
             <ListGroup.Item id="footer-item">
               <DropdownButton drop="up" id="dropdown-basic-button" title="Privacy e condizioni ">
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Dropdown.Item href="#/action-1">Informativa sulla privacy</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Contratto di licenza</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Termini e condizioni delle pagine</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Informativa sui cookie</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Informativa sul copyright</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Opzioni relative all'informativa sulla privacy (Stato della California)</Dropdown.Item>
               </DropdownButton>
             </ListGroup.Item>
           </Col>
