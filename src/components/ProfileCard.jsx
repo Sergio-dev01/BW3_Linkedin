@@ -56,28 +56,23 @@ const ProfileCard = () => {
           </div>
         </div>
 
-        <Row className=" justify-content-center mb-3  ">
-          <Col>
-            <Button className="btn rounded-pill btn-font" variant="primary">
-              Disponibile per
-            </Button>
-          </Col>
-          <Col>
-            <Button className="btn rounded-pill btn-font" variant="outline-primary">
-              Aggiungi sezione del profilo
-            </Button>
-          </Col>
-          <Col>
-            <Button className="btn rounded-pill btn-font" variant="outline-primary">
-              Primary Migliora profilo
-            </Button>
-          </Col>
-          <Col>
-            <Button className="btn rounded-pill btn-font" variant="outline-dark">
-              Primary Risorse
-            </Button>
-          </Col>
-        </Row>
+        <div className="d-flex flex-wrap gap-2 mb-3 ">
+          <Button className="btn rounded-pill btn-font" variant="primary">
+            Disponibile per
+          </Button>
+
+          <Button className="btn rounded-pill btn-font" variant="outline-primary">
+            Aggiungi sezione del profilo
+          </Button>
+
+          <Button className="btn rounded-pill btn-font" variant="outline-primary">
+            Migliora profilo
+          </Button>
+
+          <Button className="btn rounded-pill btn-font" variant="outline-dark">
+            Risorse
+          </Button>
+        </div>
         <MyCarousel />
       </Card.Body>
     </Card>
