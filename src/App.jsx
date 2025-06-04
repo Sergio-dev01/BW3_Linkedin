@@ -9,7 +9,7 @@ function App() {
     <Container fluid>
       <Row className="justify-content-center">
         <TopBar />
-        <Col xs={12} md={10}>
+        <Col xs={12} md={10} className="p-0">
           <MainContent className="MainContent" />
           <Footer />
         </Col>

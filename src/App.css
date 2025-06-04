@@ -5,12 +5,14 @@
 .navbar-container {
   border: 0.5px solid lightgray;
   background-color: white;
+  padding: 0 !important;
+  position: sticky;
+  z-index: 10;
+  top: 0;
 }
 
 .navbar {
-  width: 70%;
   height: 55px;
-  margin-inline: auto;
 }
 
 .img-fluid {
