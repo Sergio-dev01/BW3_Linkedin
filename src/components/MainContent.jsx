@@ -10,7 +10,7 @@ const MainContent = () => {
   return (
     <Container className="main-content my-5">
       <Row className="justify-content-center">
-        <Col md={8}>
+        <Col md={8}className="ps-0">
           <ProfileCard />
           <ConsigliatoPerTe/>
           <SecondCard/>

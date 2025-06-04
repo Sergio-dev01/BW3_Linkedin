@@ -13,7 +13,7 @@ const ConsigliatoPerTe = () => {
         </div>
         <div className="d-flex gap-3">
        
-          <div className="p-2 rounded-3 border bg-white" style={{ minWidth: 320 }}>
+          <div className="p-2 rounded-3 border bg-white" style={{ minWidth: 290 }}>
             <Card className="border-0 bg-transparent">
               <Card.Body>
                 <div className="d-flex align-items-center">
@@ -30,7 +30,7 @@ const ConsigliatoPerTe = () => {
             </Card>
           </div>
           
-          <div className="p-2 rounded-3 border bg-white" style={{ minWidth: 320 }}>
+          <div className="p-2 rounded-3 border bg-white" style={{ minWidth: 290 }}>
             <Card className="border-0 bg-transparent">
               <Card.Body>
                 <div className="d-flex align-items-center">
