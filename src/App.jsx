@@ -24,7 +24,7 @@ function App() {
           }
         />
         <Route
-          path="/home"
+          path="/"
           element={
             <Container fluid>
               <Row className="justify-content-center">

@@ -2,18 +2,8 @@ import { useEffect } from "react";
 import { Button, Col, Container, Dropdown, Form, Image, InputGroup, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchMyProfile } from "../redux/action";
-import {
-  Bullseye,
-  CaretDownFill,
-  CompassFill,
-  Easel2Fill,
-  FileEarmarkBarGraphFill,
-  Link,
-  PatchCheckFill,
-  PeopleFill,
-  Search,
-  Youtube,
-} from "react-bootstrap-icons";
+import { Bullseye, CaretDownFill, CompassFill, Easel2Fill, FileEarmarkBarGraphFill, PatchCheckFill, PeopleFill, Search, Youtube } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 const TopBar = function () {
   const dispatch = useDispatch();
 
@@ -56,23 +46,19 @@ const TopBar = function () {
                   <Navbar.Collapse id="navbarSupportedContent">
                     <Nav className="me-auto mb-2 mb-lg-0 d-flex flex-row flex-md-nowrap justify-content-center justify-content-md-end w-100">
                       <Nav.Link className="text-dark fs-custom pb-0 navbar-icons active" href="#">
-                        {" "}
                         <div className="d-flex flex-column justify-content-center align-items-center">
-                          <Link to="/home">
-                            {" "}
-                            <Button>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                width="24"
-                                height="24"
-                                className="mercado-match"
-                                focusable="false"
-                              >
-                                <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z" />
-                              </svg>
-                            </Button>
+                          <Link to="/" style={{ textDecoration: "none" }}>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="#666666"
+                              width="24"
+                              height="24"
+                              className="mercado-match"
+                              focusable="false"
+                            >
+                              <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z" />
+                            </svg>
                           </Link>
                           <p>Home</p>
                         </div>

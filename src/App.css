@@ -81,12 +81,6 @@
   width: 375px;
 }
 
-@media screen and (max-width: 1700px) {
-  .searchForm {
-    display: none !important;
-  }
-}
-
 #footer-item {
   border: 0;
   background-color: transparent;
