@@ -3,6 +3,7 @@ export const FETCH_PROFILES_SUCCESS = "FETCH_PROFILES_SUCCESS";
 export const UPDATE_PROFILE_SUCCESS = "UPDATE_PROFILE_SUCCESS";
 export const SET_LOADING = "SET_LOADING";
 export const SET_ERROR = "SET_ERROR";
+export const ADD_POST = "ADD_POST";
 
 const baseUrl = "https://striveschool-api.herokuapp.com/api/profile";
 
@@ -56,4 +57,11 @@ export const updateProfile = (profileData) => async (dispatch) => {
   } catch (error) {
     dispatch({ type: SET_ERROR, payload: error.message });
   }
+};
+
+export const addPost = (post) => {
+  return {
+    type: ADD_POST,
+    payload: post,
+  };
 };

@@ -7,6 +7,8 @@ import AsidePrimoComponente from "./AsidePrimoComponente";
 import AsideSecondoComponente from "./AsideSecondoComponente";
 import EsperienzeComponent from "./EsperienzeComponent";
 import CompetenzeComponent from "./CompetenzeComponent";
+import AddPost from "./AddPost";
+import PostsList from "./PostList";
 
 const MainContent = () => {
   return (
@@ -20,6 +22,8 @@ const MainContent = () => {
             <FormazioneCard />
             <EsperienzeComponent />
             <CompetenzeComponent />
+            <AddPost />
+            <PostsList />
           </div>
         </Col>
         <Col md={4}>
