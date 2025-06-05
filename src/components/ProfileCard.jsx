@@ -18,7 +18,7 @@ const ProfileCard = () => {
   }
 
   return (
-    <Card className="mb-3">
+    <Card className="mb-0">
       <div style={{ backgroundColor: "#dfeae7", height: "150px" }} />
       <Card.Body className="text-start position-relative" style={{ marginTop: "-100px" }}>
         <Image src={myProfile.image} roundedCircle className="border border-3" style={{ width: "150px", height: "150px", objectFit: "cover" }} />
@@ -36,7 +36,7 @@ const ProfileCard = () => {
           <Pencil />
         </Button>
 
-        <div className="d-flex align-items-center mt-2 mb-3">
+        <div className="d-flex align-items-center mt-2 mb-2">
           <div className="flex-grow-1">
             <Card.Title className="mt-2">
               {myProfile.name} {myProfile.surname}

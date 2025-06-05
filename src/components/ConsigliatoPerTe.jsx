@@ -18,9 +18,7 @@ const ConsigliatoPerTe = () => {
                   <img src="https://static.licdn.com/aero-v1/sc/h/7180r6w1mkjskxrgnbta6aeu1" alt="generic" />
                   <h6 className="mb-0 ms-2">In quale settore lavori?</h6>
                 </div>
-                <article>
-                  Gli utenti che aggiungono un settore ricevono fino a 2,5 volte più visualizzazioni del profilo
-                </article>
+                <article>Gli utenti che aggiungono un settore ricevono fino a 2,5 volte più visualizzazioni del profilo</article>
                 <Button variant="light" className="rounded-pill border-dark mt-3">
                   Aggiungi settore
                 </Button>
@@ -34,9 +32,7 @@ const ConsigliatoPerTe = () => {
                   <img src="https://static.licdn.com/aero-v1/sc/h/db05fgvyq7n2ng4fiexgf4hcq" alt="generic" />
                   <h6 className="mb-0 ms-2">In quale settore lavori?</h6>
                 </div>
-                <article>
-                  Gli utenti che includono un riepilogo ricevono fino a 3,9 volte più visualizzazioni del profilo.
-                </article>
+                <article>Gli utenti che includono un riepilogo ricevono fino a 3,9 volte più visualizzazioni del profilo.</article>
                 <Button variant="light" className="rounded-pill border-dark mt-3">
                   Aggiungi riepilogo
                 </Button>
@@ -47,5 +43,5 @@ const ConsigliatoPerTe = () => {
       </Card.Body>
     </Card>
   );
-}
+};
 export default ConsigliatoPerTe;
