@@ -7,7 +7,7 @@ export const SET_ERROR = "SET_ERROR";
 const baseUrl = "https://striveschool-api.herokuapp.com/api/profile";
 
 const token =
-  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODNlYmIxNGIxMGJmMDAwMTVjZjIyYTciLCJpYXQiOjE3NDkwMjgxMzYsImV4cCI6MTc1MDIzNzczNn0.XFqECEDgMz_5gm4UrksLxQCBUPU4x3HVpVwkiOADh-E";
+  "Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODNlYmIzMWIxMGJmMDAwMTVjZjIyYWEiLCJpYXQiOjE3NDkxMTIzMDQsImV4cCI6MTc1MDMyMTkwNH0.b5sfNHSm9Y8z2_0mR5P63t2WKuuExFcrA0XKUtiKxt4   ";
 
 export const fetchMyProfile = () => async (dispatch) => {
   dispatch({ type: SET_LOADING });

@@ -112,3 +112,7 @@
   white-space: nowrap;
   max-width: 100%;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0); 
+}
