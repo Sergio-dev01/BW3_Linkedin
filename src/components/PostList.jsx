@@ -7,13 +7,13 @@ const PostsList = () => {
   console.log("PROFILE:", profile);
 
   if (!posts.length) {
-    return <p>Nessun post disponibile.</p>;
+    return <p className="mb-2">Nessun post disponibile.</p>;
   }
 
   return (
     <>
       {posts.map((post, index) => (
-        <Card key={index} className="mb-3">
+        <Card key={index} className="mb-2">
           <Card.Body>
             <Card.Title>{profile.username}</Card.Title>
             {post.text && <Card.Text>{post.text}</Card.Text>}

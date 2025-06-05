@@ -47,7 +47,7 @@ const AddPost = () => {
 
   return (
     <>
-      <Card className="p-3 mb-3">
+      <Card className="p-3 mb-2">
         <Row className="align-items-center mb-2">
           <Col xs="auto">
             <Image src={loggedUser.image} roundedCircle width={40} height={40} alt="Avatar" />

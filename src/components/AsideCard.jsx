@@ -4,10 +4,10 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 function AsideCard() {
   return (
-    <Row className="justify-content-center">
-      <Col sm={12} className="px-3">
-        <Card>
-          <Card.Body className="p-0">
+    <Row className="justify-content-center mb-2 ">
+      <Col sm={12}>
+        <Card className="px-0">
+          <Card.Body>
             <Card.Title className=" my-3 px-3 d-flex align-items-center justify-content-between ">
               <h3>Linkedln Notizie</h3>
               <i class="bi bi-info-square-fill"></i>

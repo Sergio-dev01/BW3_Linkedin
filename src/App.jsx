@@ -30,7 +30,7 @@ function App() {
               <Row className="justify-content-center">
                 <TopBar />
 
-                <Col xs={12} md={10} className="p-0 mt-3">
+                <Col xs={12} md={10} className="p-0 mt-4">
                   <Home />
                 </Col>
               </Row>

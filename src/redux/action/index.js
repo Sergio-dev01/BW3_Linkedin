@@ -14,7 +14,7 @@ export const DELETE_EXPERIENCE_SUCCESS = "DELETE_EXPERIENCE_SUCCESS";
 const baseUrl = "https://striveschool-api.herokuapp.com/api/profile";
 
 const token =
-  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODNlYmIxNGIxMGJmMDAwMTVjZjIyYTciLCJpYXQiOjE3NDkwMjgxMzYsImV4cCI6MTc1MDIzNzczNn0.XFqECEDgMz_5gm4UrksLxQCBUPU4x3HVpVwkiOADh-E";
+  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODNlYmIzMWIxMGJmMDAwMTVjZjIyYWEiLCJpYXQiOjE3NDkxMzY2MTgsImV4cCI6MTc1MDM0NjIxOH0.s-7gHOGwHKM1oEY6tnJtOhL1TRKoohQr5ccEjEZ0Qd0";
 
 export const fetchMyProfile = () => async (dispatch) => {
   dispatch({ type: SET_LOADING });

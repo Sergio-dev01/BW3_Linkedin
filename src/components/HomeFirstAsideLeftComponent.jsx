@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Card, Button, Image, Form, Modal } from "react-bootstrap";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -7,11 +7,6 @@ import { fetchMyProfile } from "../redux/action";
 const HomeFirstAsideLeftComponent = () => {
   const dispatch = useDispatch();
   const { myProfile } = useSelector((state) => state.profile);
-
-  const [showModal, setShowModal] = useState(false);
-
-  const handleOpen = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
 
   useEffect(() => {
     dispatch(fetchMyProfile());
@@ -62,49 +57,9 @@ const HomeFirstAsideLeftComponent = () => {
               </Card.Subtitle>
             </div>
           </div>
-
-          <Form.Control
-            size="sm"
-            style={{
-              backgroundColor: "#DFDEDA",
-              cursor: "pointer",
-            }}
-            placeholder="+ esperienza"
-            onClick={handleOpen}
-            readOnly
-          />
+          <Card.Text>{myProfile.email}</Card.Text>
         </Card.Body>
       </Card>
-
-      <Modal show={showModal} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Aggiungi Esperienza</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3">
-              <Form.Label>Ruolo</Form.Label>
-              <Form.Control type="text" placeholder="Es. Sviluppatore Web" />
-            </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Descrizione</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Località</Form.Label>
-              <Form.Control type="text" placeholder="Es. Milano" />
-            </Form.Group>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Annulla
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Salva
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </>
   );
 };

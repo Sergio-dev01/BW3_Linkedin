@@ -14,20 +14,20 @@ const Home = () => {
   return (
     <Container>
       <Row>
-        <Col md={3}>
+        <Col md={3} className="pe-0">
           <HomeFirstAsideLeftComponent />
           <HomeSecondAsideLeftComponents />
           <HomeThirdAsideComponent />
           <HomeFourthAsideLeftComponent />
         </Col>
 
-        <Col md={6}>
+        <Col md={6} className="px-4">
           <HomeCentralComponent />
           <AddPost />
           <PostsList />
           <ConsigliatiPerTe />
         </Col>
-        <Col md={3} className="p-0">
+        <Col md={3} className="p-4">
           <AsideCard />
           <MiniFooter />
         </Col>

@@ -38,7 +38,7 @@ const MyCarousel = () => {
           className="flex-shrink-0 text-start border border-secondary-subtle"
           style={{ maxWidth: "400px", scrollSnapAlign: "start", fontSize: "0.8rem", borderWidth: "1px" }}
         >
-          <Card.Body className="pt-2 pb-0">
+          <Card.Body className="pt-1 pb-1">
             <Card.Title className="mb-1 ">Disponibile a lavorare</Card.Title>
             <Card.Text className="text-muted mb-1">Ruoli di Programmatore e Tecnico informatico</Card.Text>
             <a className="text-decoration-none" href="#dettagli">
@@ -52,10 +52,8 @@ const MyCarousel = () => {
           className="flex-shrink-0 text-start border border-secondary-subtle"
           style={{ maxWidth: "400px", scrollSnapAlign: "start", fontSize: "0.8rem", borderWidth: "1px" }}
         >
-          <Card.Body className="pt-2 pb-0">
-            <Card.Title className="mb-1" style={{ fontSize: "0.8rem" }}>
-              <strong>Fai sapere che stai facendo selezione</strong>
-            </Card.Title>
+          <Card.Body className="pt-1 pb-1">
+            <Card.Title className="mb-1">Fai sapere che stai facendo selezione</Card.Title>
             <Card.Text className="mb-1 " style={{ fontSize: "0.8rem" }}>
               e attrai candidati qualificati.
             </Card.Text>
@@ -71,10 +69,8 @@ const MyCarousel = () => {
           className="flex-shrink-0 text-start border border-secondary-subtle"
           style={{ maxWidth: "400px", scrollSnapAlign: "start", fontSize: "0.8rem", borderWidth: "1px" }}
         >
-          <Card.Body className="pt-2 pb-0">
-            <Card.Title className="mb-1 " style={{ fontSize: "0.8rem" }}>
-              <strong>Metti in risalto i tuoi servizi</strong>
-            </Card.Title>
+          <Card.Body className="pt-1 pb-1">
+            <Card.Title className="mb-1 ">Metti in risalto i tuoi servizi</Card.Title>
             <Card.Text className="mb-1 " style={{ fontSize: "0.8rem" }}>
               in un'apposita sezione sul tuo profilo, cosi sarà più facile trovarti.
             </Card.Text>

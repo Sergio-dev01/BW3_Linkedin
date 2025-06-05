@@ -146,4 +146,12 @@
 }
 .active {
   border: 0;
+  margin-bottom: 8px;
+}
+
+#background-img {
+  height: 150px;
+  background-image: url(https://thingscareerrelated.com/wp-content/uploads/2021/10/default-background-image.png);
+  background-size: cover;
+  transform: translate(0px, -1px);
 }

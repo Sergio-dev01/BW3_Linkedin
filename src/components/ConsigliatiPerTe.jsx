@@ -15,7 +15,7 @@ const ConsigliatiPerTe = () => {
     return <p>Caricamento profili...</p>;
   }
   return (
-    <div className="bg-white border rounded p-3">
+    <div className="bg-white border rounded p-3 mb-2">
       <h5>Consigliati per te</h5>
       {profiles.slice(0, 5).map((profile) => (
         <Card key={profile.id} className="border-0 bg-white border-bottom">

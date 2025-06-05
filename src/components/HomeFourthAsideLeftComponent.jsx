@@ -2,7 +2,7 @@ import { Card } from "react-bootstrap";
 
 const HomeFourthAsideLeftComponent = () => {
   return (
-    <Card>
+    <Card className="mb-2">
       <Card.Body>
         <div className="d-flex justify-content-between align-items-start">
           <div className="d-flex flex-column">
