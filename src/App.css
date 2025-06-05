@@ -155,3 +155,27 @@
   background-size: cover;
   transform: translate(0px, -1px);
 }
+
+@media (min-width: 576px) {
+  .custom-h5 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-h5 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-h5 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-h5 {
+    font-size: 1.3em;
+  }
+}
