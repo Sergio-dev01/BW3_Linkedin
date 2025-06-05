@@ -16,26 +16,29 @@ const TopBar = function () {
   return (
     <Container fluid className="navbar-container">
       <Row className="justify-content-center">
-        <Col md={10}>
-          <Navbar expand="lg" className="navbar navbar-expand-lg py-0">
-            <div className="d-flex w-100 align-items-center left-navbar">
+        <Col md={10} lg={11}>
+          <Navbar expand="lg" className="navbar navbar-expand-lg py-0 ">
+            <div className="d-flex w-100 align-items-center left-navbar ">
               <Row className="w-100 align-items-center">
-                <Col xs={12} md={6} className="d-flex align-items-center mb-2 mb-md-0">
+                <Col xs={12} md={6} className="d-flex align-items-center mb-2 mb-md-0 gap-5">
                   <Navbar.Brand href="#" className="me-2">
                     <Image className="img-fluid" style={{ width: "35px" }} src="LinkedIn_logo_initials.png" alt="logo" />
                   </Navbar.Brand>
-                  <Form className="d-flex flex-grow-1 searchForm">
-                    <Row className="w-100">
-                      <Col xs={12}>
-                        <InputGroup className="navbar-form border-0">
-                          <InputGroup.Text className="border-end-0 pe-1 bg-transparent border-0">
-                            <Search className="text-muted" />
-                          </InputGroup.Text>
-                          <Form.Control type="text" placeholder="Cerca" className="bg-transparent border-0 shadow-none" />
-                        </InputGroup>
-                      </Col>
-                    </Row>
-                  </Form>
+                  <div>
+                    <Form className="d-flex flex-grow-1 ">
+                      <Row className="w-100  d-xxl-block d-sm-none">
+                        <Col xs={12}>
+                          <InputGroup className="navbar-form border-0">
+                            <InputGroup.Text className="border-end-0 pe-1 bg-transparent border-0">
+                              <Search className="text-muted" />
+                            </InputGroup.Text>
+                            <Form.Control type="text" placeholder="Cerca" className="bg-transparent border-0 shadow-none" />
+                          </InputGroup>
+                        </Col>
+                      </Row>
+                      <Search className="d-sm-block d-xxl-none fs-3" />
+                    </Form>
+                  </div>
                 </Col>
 
                 <Col xs={12} md={6} className="d-flex justify-content-md-end justify-content-center align-items-center">
