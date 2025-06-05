@@ -8,7 +8,7 @@ import ConsigliatiPerTe from "./ConsigliatiPerTe";
 import AsideCard from "./AsideCard";
 import MiniFooter from "./MiniFooter";
 import AddPost from "./AddPost";
-import PostsList from "./PostList";
+import PostList from "./PostList";
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
         <Col md={6}>
           <HomeCentralComponent />
           <AddPost />
-          <PostsList />
+          <PostList />
           <ConsigliatiPerTe />
         </Col>
         <Col md={3} className="p-0">

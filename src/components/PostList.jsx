@@ -1,43 +1,45 @@
-import { useSelector } from "react-redux";
-import { Card, Image } from "react-bootstrap";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchPosts } from "../redux/action";
 
-const PostsList = () => {
+const PostList = () => {
+  const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts.posts);
-  const profile = useSelector((state) => state.profile.myProfile);
-  console.log("PROFILE:", profile);
+  const postDetails = useSelector((state) => state.posts.postDetails);
+
+  useEffect(() => {
+    dispatch(fetchPosts());
+  }, [dispatch]);
+
+  // Prendi 10 post casuali
+  const randomPosts = posts.sort(() => Math.random() - 0.5).slice(0, 10);
 
   if (!posts.length) {
-    return <p>Nessun post disponibile.</p>;
+    return <p>Caricamento post...</p>;
   }
 
   return (
-    <>
-      {posts.map((post, index) => (
-        <Card key={index} className="mb-3">
-          <Card.Body>
-            <Card.Title>{profile.username}</Card.Title>
-            {post.text && <Card.Text>{post.text}</Card.Text>}
+    <div>
+      {randomPosts.map((post) => {
+        const detailedPost = postDetails[post._id];
+        const comments = detailedPost?.comments || [];
 
-            {post.media && post.mediaType === "image" && (
-              <div className="mb-2">
-                <Image src={post.media} fluid />
-              </div>
-            )}
+        return (
+          <div key={post._id} className="mb-4 p-3 border rounded">
+            <h5>{post.text}</h5>
+            {post.image && <img src={post.image} alt="Post" style={{ maxWidth: "100%" }} />}
+            <p>Autore: {post.username}</p>
 
-            {post.media && post.mediaType === "video" && (
-              <div className="mb-2">
-                <video controls width="100%">
-                  <source src={post.media} type="video/mp4" />
-                  Il tuo browser non supporta il tag video.
-                </video>
-              </div>
-            )}
-
-            <small className="text-muted">{new Date(post.timestamp).toLocaleString()}</small>
-          </Card.Body>
-        </Card>
-      ))}
-    </>
+            <ul>
+              {comments.map((comment, index) => (
+                <li key={index}>{comment.text}</li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+    </div>
   );
 };
-export default PostsList;
+
+export default PostList;

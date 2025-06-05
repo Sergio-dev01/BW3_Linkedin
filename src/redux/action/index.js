@@ -10,6 +10,9 @@ export const UPLOAD_EXPERIENCE_IMAGE_SUCCESS = "UPLOAD_EXPERIENCE_IMAGE_SUCCESS"
 export const SET_EXPERIENCES_SUCCESS = "SET_EXPERIENCES_SUCCESS";
 export const FETCH_EXPERIENCES_SUCCESS = "FETCH_EXPERIENCES_SUCCESS";
 export const DELETE_EXPERIENCE_SUCCESS = "DELETE_EXPERIENCE_SUCCESS";
+export const SET_POSTS_LOADING = "SET_POSTS_LOADING";
+export const FETCH_POSTS_SUCCESS = "FETCH_POSTS_SUCCESS";
+export const SET_POSTS_ERROR = "SET_POSTS_ERROR";
 
 const baseUrl = "https://striveschool-api.herokuapp.com/api/profile";
 
@@ -69,6 +72,32 @@ export const addPost = (post) => {
   return {
     type: ADD_POST,
     payload: post,
+  };
+};
+
+export const fetchPosts = () => {
+  return async (dispatch) => {
+    dispatch({ type: "SET_POSTS_LOADING" });
+    try {
+      const token =
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODNlYmIxNGIxMGJmMDAwMTVjZjIyYTciLCJpYXQiOjE3NDkwMjgxMzYsImV4cCI6MTc1MDIzNzczNn0.XFqECEDgMz_5gm4UrksLxQCBUPU4x3HVpVwkiOADh-E";
+
+      const response = await fetch("https://striveschool-api.herokuapp.com/api/posts/", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: token,
+        },
+      });
+
+      if (!response.ok) throw new Error("Errore nel recupero dei post");
+
+      const data = await response.json();
+      console.log("Dati fetchati:", data);
+      dispatch({ type: "FETCH_POSTS_SUCCESS", payload: data });
+    } catch (error) {
+      console.error(error);
+    }
   };
 };
 
