@@ -142,5 +142,8 @@
 }
 
 #aside-list-item:hover {
-  background-color: #6c757d;
+  background-color: #d0d2d3;
+}
+.active {
+  border: 0;
 }

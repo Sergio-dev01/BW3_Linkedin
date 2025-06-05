@@ -22,8 +22,6 @@ const MainContent = () => {
             <FormazioneCard />
             <EsperienzeComponent />
             <CompetenzeComponent />
-            <AddPost />
-            <PostsList />
           </div>
         </Col>
         <Col md={4}>

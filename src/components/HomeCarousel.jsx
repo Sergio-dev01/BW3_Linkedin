@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomeCarousel = () => {
   return (
-    <Carousel interval={null} controls indicators>
+    <Carousel interval={null} controls indicators className="border-0">
       <Carousel.Item>
         <Card>
           <Card.Title>Preparati per la tua ricerca di lavoro</Card.Title>
