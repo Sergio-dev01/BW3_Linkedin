@@ -141,7 +141,7 @@ const MiniFooter = () => {
             role="img"
             aria-hidden="false"
             aria-label="LinkedIn"
-            class="global-footer-compact__linkedin-logo"
+            className="global-footer-compact__linkedin-logo"
             xmlns="http://www.w3.org/2000/svg"
             width="56"
             height="14"

@@ -37,3 +37,14 @@ body {
   text-decoration: underline;
   text-decoration-color: rgb(45, 45, 194);
 }
+
+#aside-list-item {
+  border: 0;
+  padding: 0;
+  margin-bottom: 0.75em;
+  padding-left: 1em;
+}
+
+#aside-list-item:hover {
+  background-color: #6c757d;
+}
