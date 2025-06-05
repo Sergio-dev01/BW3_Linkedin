@@ -16,7 +16,7 @@ const TopBar = function () {
   return (
     <Container fluid className="navbar-container">
       <Row className="justify-content-center">
-        <Col md={10} lg={11}>
+        <Col lg={10} md={11} className="p-0">
           <Navbar expand="lg" className="navbar navbar-expand-lg py-0 ">
             <div className="d-flex w-100 align-items-center left-navbar ">
               <Row className="w-100 align-items-center">
