@@ -5,6 +5,8 @@ import HomeThirdAsideComponent from "./HomeThirdAsideComponent";
 import HomeFourthAsideLeftComponent from "./HomeFourthAsideLeftComponent";
 import HomeCentralComponent from "./HomeCentralComponent";
 import ConsigliatiPerTe from "./ConsigliatiPerTe";
+import AsideCard from "./AsideCard";
+import MiniFooter from "./MiniFooter";
 
 const Home = () => {
   return (
@@ -21,7 +23,10 @@ const Home = () => {
           <HomeCentralComponent />
           <ConsigliatiPerTe />
         </Col>
-        <Col md={3}></Col>
+        <Col md={3} className="p-0">
+          <AsideCard />
+          <MiniFooter />
+        </Col>
       </Row>
     </Container>
   );
