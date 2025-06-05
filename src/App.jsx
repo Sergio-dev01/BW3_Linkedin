@@ -4,7 +4,7 @@ import TopBar from "./components/TopBar";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Home from "./components/Home";
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +29,10 @@ function App() {
             <Container fluid>
               <Row className="justify-content-center">
                 <TopBar />
+
+                <Col xs={12} md={10} className="p-0">
+                  <Home />
+                </Col>
               </Row>
             </Container>
           }
