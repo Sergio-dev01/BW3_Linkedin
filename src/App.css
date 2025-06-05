@@ -17,3 +17,23 @@ body {
   background-color: #f4f2ee;
   margin-top: 300px;
 }
+#mini-footer-item {
+  border: 0;
+  background-color: transparent;
+  font-size: bold;
+  font-weight: 400;
+  color: #6c757d;
+  text-decoration: none;
+}
+#mini-footer-item:hover {
+  text-decoration: underline;
+  color: rgb(45, 45, 194);
+}
+
+#first-drop {
+  font-weight: 500;
+}
+#drop-div:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(45, 45, 194);
+}
