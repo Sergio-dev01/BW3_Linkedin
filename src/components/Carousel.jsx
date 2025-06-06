@@ -83,7 +83,7 @@ const MyCarousel = () => {
 
       <Button
         variant="light"
-        className="position-absolute top-50 end-0 translate-middle-y z-1"
+        className="position-absolute top-50 end-0 translate-middle-y z-1 "
         onClick={scrollRight}
         style={{ borderRadius: "50%", backgroundColor: "rgb(135 135 135 / 42%)" }}
       >

@@ -188,3 +188,25 @@
   padding: 0 !important;
   margin: 0 !important;
 }
+#first-drop {
+  font-weight: bold;
+}
+
+#btn-aggiorna {
+  z-index: 100;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  height: 50px;
+  transform: translate(0px, 150px);
+}
+#mini-footer-text {
+  text-decoration: none;
+  font-size: small;
+  font-weight: 500;
+  color: #6c757d !important;
+}
+
+#dropdown-basic-button {
+  font-size: 13px !important;
+}
