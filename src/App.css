@@ -1,5 +1,7 @@
 #root {
   background-color: #f4f2ee;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .navbar-container {

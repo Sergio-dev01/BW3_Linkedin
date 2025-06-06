@@ -5,6 +5,7 @@ import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
+import Jobs from "./components/Jobs";
 function App() {
   return (
     <BrowserRouter>
@@ -37,6 +38,19 @@ function App() {
             </Container>
           }
         />
+        <Route
+          path="/jobs"
+          element={
+            <Container fluid>
+              <Row className="justify-content-center">
+                <TopBar />
+                <Col xs={12} md={10} className="p-0 ">
+                  <Jobs />
+                </Col>
+              </Row>
+            </Container>
+          }
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
