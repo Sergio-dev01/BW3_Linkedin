@@ -15,7 +15,7 @@ const AsideSecondoComponente = () => {
     return <p>Caricamento profili...</p>;
   }
   return (
-    <div className="bg-white border rounded-3 p-3 mt-3">
+    <div className="bg-white border rounded-3 p-3 mt-2">
       <div className="ms-3">
         <h5 className="mb-0">Persone che potresti conoscere</h5>
         <p className="text-muted small mb-2">Dalla tua scuola o università</p>

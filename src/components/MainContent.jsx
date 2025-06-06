@@ -15,7 +15,7 @@ const MainContent = () => {
     <Container className="main-content my-4">
       <Row className="justify-content-center">
         <Col md={8} className="p-0">
-          <div className="d-flex flex-column gap-3 ">
+          <div className="d-flex flex-column gap-2 ">
             <ProfileCard />
             <ConsigliatoPerTe />
             <SecondCard />
@@ -24,8 +24,8 @@ const MainContent = () => {
             <CompetenzeComponent />
           </div>
         </Col>
-        <Col md={4}>
-          <div className="d-flex flex-column gap-3 d-sm-none d-md-block">
+        <Col md={4} className="ps-4">
+          <div className="d-flex flex-column d-sm-none d-md-block ">
             <AsidePrimoComponente />
             <AsideSecondoComponente />
           </div>

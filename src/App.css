@@ -146,4 +146,45 @@
 }
 .active {
   border: 0;
+  margin-bottom: 8px;
+}
+
+#background-img {
+  height: 150px;
+  background-image: url(https://thingscareerrelated.com/wp-content/uploads/2021/10/default-background-image.png);
+  background-size: cover;
+  transform: translate(0px, -1px);
+}
+
+@media (min-width: 576px) {
+  .custom-h5 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-h5 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-h5 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-h5 {
+    font-size: 1.3em;
+  }
+}
+#mini-footer-item {
+  border: 0;
+  background-color: transparent;
+  font-size: smaller;
+  font-weight: 500;
+  color: #6c757d;
+  padding: 0 !important;
+  margin: 0 !important;
 }

@@ -22,8 +22,8 @@ const ProfileCard = () => {
 
   return (
     <>
-      <Card className="mb-3">
-        <div style={{ backgroundColor: "#dfeae7", height: "150px" }} />
+      <Card className="overflow-hidden">
+        <div id="background-img" />
         <Card.Body className="text-start position-relative" style={{ marginTop: "-100px" }}>
           <Image
             src={myProfile.image}
@@ -56,10 +56,14 @@ const ProfileCard = () => {
               <Card.Title className="mt-2">
                 {myProfile.name} {myProfile.surname}
               </Card.Title>
-              <p className="mb-0">{myProfile.title}</p>
-              <Card.Subtitle className="mb-2 text-muted">
+              <Card.Subtitle className="mb-3 mt-2 text-muted d-flex justify-content-between">
+                <div>
+                  <p className="mb-0">
+                    {myProfile.title}, {myProfile.area}
+                  </p>
+                </div>
+
                 <div className="d-flex">
-                  <p className="me-3">{myProfile.area}</p>
                   <a className="text-decoration-none" href="#">
                     <span>Informazioni di contatto</span>
                   </a>

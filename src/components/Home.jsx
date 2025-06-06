@@ -8,23 +8,24 @@ import ConsigliatiPerTe from "./ConsigliatiPerTe";
 import AsideCard from "./AsideCard";
 import MiniFooter from "./MiniFooter";
 import AddPost from "./AddPost";
-import PostList from "./PostList";
+import PostsList from "./PostList";
 
 const Home = () => {
   return (
     <Container>
       <Row>
-        <Col md={3}>
+        <Col md={3} className="p-sm-0">
           <HomeFirstAsideLeftComponent />
           <HomeSecondAsideLeftComponents />
           <HomeThirdAsideComponent />
           <HomeFourthAsideLeftComponent />
         </Col>
 
-        <Col md={6}>
+        <Col md={6} className=" px-sm-0 px-md-4">
           <HomeCentralComponent />
           <AddPost />
-          <PostList />
+          <h3 className="text-center m-0 pt-2">POST DEGLI UTENTI</h3>
+          <PostsList />
           <ConsigliatiPerTe />
         </Col>
         <Col md={3} className="p-0">

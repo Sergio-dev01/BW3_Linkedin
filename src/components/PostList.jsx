@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchPosts } from "../redux/action";
+import { Card } from "react-bootstrap";
 
 const PostList = () => {
   const dispatch = useDispatch();
@@ -25,17 +26,20 @@ const PostList = () => {
         const comments = detailedPost?.comments || [];
 
         return (
-          <div key={post._id} className="mb-4 p-3 border rounded">
-            <h5>{post.text}</h5>
-            {post.image && <img src={post.image} alt="Post" style={{ maxWidth: "100%" }} />}
-            <p>Autore: {post.username}</p>
+          <Card key={post._id} className="mt-2 border rounded">
+            <Card.Body>
+              <Card.Title>{post.text}</Card.Title>
 
-            <ul>
-              {comments.map((comment, index) => (
-                <li key={index}>{comment.text}</li>
-              ))}
-            </ul>
-          </div>
+              {post.image && <img src={post.image} alt="Post" style={{ maxWidth: "100%" }} />}
+              <Card.Text>Autore: {post.username}</Card.Text>
+
+              <ul>
+                {comments.map((comment, index) => (
+                  <li key={index}>{comment.text}</li>
+                ))}
+              </ul>
+            </Card.Body>
+          </Card>
         );
       })}
     </div>

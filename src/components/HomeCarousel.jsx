@@ -6,7 +6,7 @@ const HomeCarousel = () => {
     <Carousel interval={null} controls indicators className="border-0">
       <Carousel.Item>
         <Card>
-          <Card.Title>Preparati per la tua ricerca di lavoro</Card.Title>
+          <Card.Title className="p-2">Preparati per la tua ricerca di lavoro</Card.Title>
           <Card.Img variant="top" src="https://media.licdn.com/media/AAYQAgSuAAgAAQAAAAAAACwog6StkzhzSlK17m4iY5d_Xg.png" />
           <Card.Body>
             <Card.Text>Aggiungi la tua esperienza lavorativa e le tue competenze per mostrare i tuoi punti di forza ai recruiter</Card.Text>
