@@ -321,3 +321,26 @@ export const deleteExperience = (userId, expId) => {
     }
   };
 };
+
+export const fetchJobs = () => {
+  return async (dispatch) => {
+    dispatch({ type: "FETCH_JOBS_REQUEST" });
+
+    try {
+      const response = await fetch("https://strive-benchmark.herokuapp.com/api/jobs");
+      if (!response.ok) throw new Error("Errore nel recupero dei lavori");
+
+      const data = await response.json();
+
+      dispatch({
+        type: "FETCH_JOBS_SUCCESS",
+        payload: data.data,
+      });
+    } catch (error) {
+      dispatch({
+        type: "FETCH_JOBS_FAILURE",
+        payload: error.message,
+      });
+    }
+  };
+};

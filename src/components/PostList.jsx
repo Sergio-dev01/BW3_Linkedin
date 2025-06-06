@@ -69,7 +69,7 @@ const PostList = () => {
         const comments = detailedPost?.comments || [];
 
         return (
-          <Card key={post._id} className="mb-4 p-3 border rounded">
+          <Card key={post._id} className="mb-2 p-3 border rounded">
             <Card.Body>
               <Card.Title>{post.text}</Card.Title>
               {post.image && <img src={post.image} alt="Post" style={{ maxWidth: "100%" }} />}

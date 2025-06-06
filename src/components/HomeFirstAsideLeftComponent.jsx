@@ -24,7 +24,7 @@ const HomeFirstAsideLeftComponent = () => {
   return (
     <>
       <Card className="mb-2">
-        <div style={{ backgroundColor: "#dfeae7", height: "75px" }} />
+        <div id="background-img" style={{ height: "75px" }} />
         <Card.Body className="text-start position-relative" style={{ marginTop: "-50px" }}>
           <Image
             src={myProfile.image}

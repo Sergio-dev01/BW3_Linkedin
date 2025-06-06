@@ -24,7 +24,7 @@ const Home = () => {
         <Col md={6} className=" px-sm-0 px-md-4">
           <HomeCentralComponent />
           <AddPost />
-          <h3 className="text-center m-0 pt-2">POST DEGLI UTENTI</h3>
+          <h3 className="text-center m-0 py-1">POST DEGLI UTENTI</h3>
           <PostsList />
           <ConsigliatiPerTe />
         </Col>
