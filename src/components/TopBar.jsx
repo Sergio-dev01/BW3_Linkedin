@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Button, Col, Container, Dropdown, Form, Image, InputGroup, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchMyProfile } from "../redux/action";
-import { Bullseye, CaretDownFill, CompassFill, Easel2Fill, FileEarmarkBarGraphFill, PatchCheckFill, PeopleFill, Search, Youtube } from "react-bootstrap-icons";
+import { Bullseye, CaretDownFill, CompassFill, Easel2Fill, FileEarmarkBarGraphFill, Linkedin, PatchCheckFill, PeopleFill, Search, Youtube } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 const TopBar = function () {
   const dispatch = useDispatch();
@@ -23,7 +23,7 @@ const TopBar = function () {
               <Row className="w-100 align-items-center">
                 <Col xs={12} md={6} className="d-flex align-items-center mb-2 mb-md-0 gap-5">
                   <Navbar.Brand href="#" className="me-2">
-                    <Image className="img-fluid" style={{ width: "35px" }} src="LinkedIn_logo_initials.png" alt="logo" />
+                   <Link to="/" style={{ textDecoration: "none" }}>  <Image className="img-fluid" style={{ width: "35px" }} src="LinkedIn_logo_initials.png" alt="logo" /> </Link>
                   </Navbar.Brand>
                   <div>
                     <Form className="d-flex flex-grow-1 ">
@@ -80,9 +80,9 @@ const TopBar = function () {
                           <p>Rete</p>
                         </div>
                       </Nav.Link>
-                      <Nav.Link className="text-dark fs-custom pb-0 navbar-icons" href="#">
+                         <Nav.Link className="text-dark fs-custom pb-0 navbar-icons" href="">
                         <div className="d-flex flex-column justify-content-center align-items-center">
-                          <svg
+                          <Link to="/jobs" style={{ textDecoration: "none" }}>   <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             data-supported-dps="24x24"
@@ -93,10 +93,11 @@ const TopBar = function () {
                             focusable="false"
                           >
                             <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
-                          </svg>{" "}
+                          </svg></Link> 
                           <p>Lavoro</p>
                         </div>
                       </Nav.Link>
+                      
                       <Nav.Link className="text-dark fs-custom pb-0 navbar-icons" href="#">
                         <div className="d-flex flex-column justify-content-center align-items-center">
                           <svg
@@ -154,9 +155,9 @@ const TopBar = function () {
                             </strong>
                             <div className="text-muted small">{myProfile.title ? myProfile.title : "--"}</div>
                             <div className="d-flex gap-2 mt-2">
-                              <Button variant="outline-primary" size="sm">
+                              <Link to="/profile" style={{ textDecoration: "none" }}>     <Button variant="outline-primary" size="sm">
                                 Visualizza profilo
-                              </Button>
+                              </Button> </Link>
                               <Button variant="primary" size="sm">
                                 Verifica
                               </Button>
@@ -285,7 +286,7 @@ const TopBar = function () {
                   </div>
                 </Dropdown.Menu>
               </Dropdown>
-              <Nav.Link>
+              <Nav.Link className="d-md-none d-lg-block">
                 <p className="business text-center p-3 pb-0" style={{ width: "10rem" }}>
                   Prova Premium per 0 <br /> EUR
                 </p>
