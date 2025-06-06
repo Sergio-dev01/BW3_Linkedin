@@ -179,3 +179,12 @@
     font-size: 1.3em;
   }
 }
+#mini-footer-item {
+  border: 0;
+  background-color: transparent;
+  font-size: smaller;
+  font-weight: 500;
+  color: #6c757d;
+  padding: 0 !important;
+  margin: 0 !important;
+}

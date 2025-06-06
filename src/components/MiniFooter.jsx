@@ -9,27 +9,25 @@ const MiniFooter = () => {
       <Container fluid className="p-0 m-0">
         <Row>
           <Col sm={12}>
-            <Row className="justify-content-center">
-              <Col sm={12} className="d-flex  flex-wrap justify-content-center p-0">
-                <ListGroup horizontal className=" p-0">
-                  <ListGroup.Item id="footer-item" className="p-1 mb-1 me-2">
-                    <a id="mini-footer-item" href="#">
-                      Informazioni
-                    </a>
-                  </ListGroup.Item>
-                  <ListGroup.Item id="footer-item" className="p-1 mb-1 me-2">
-                    <a id="mini-footer-item">Accessibilità</a>
-                  </ListGroup.Item>
-                </ListGroup>
+            <Row className="justify-content-center flex-wrap">
+              <Col sm={4}>
+                <div id="mini-footer-item" className="p-1 mb-1 me-2 fluid">
+                  <a>Informazioni</a>
+                </div>
+              </Col>
+              <Col sm={4}>
+                <div id="mini-footer-item" className="p-1 mb-1 me-2">
+                  <a>Accessibilità</a>
+                </div>
               </Col>
             </Row>
             <Row className="justify-content-center">
-              <Col sm={12} className="d-flex  flex-wrap justify-content-center p-0">
+              <Col sm={12} className="d-flex   justify-content-center p-0">
                 <ListGroup horizontal className=" p-0">
-                  <ListGroup.Item id="footer-item" className="p-1 mb-1 me-2 d-flex align-items-center">
-                    <a id="mini-footer-item">Centro assistenza</a>
+                  <ListGroup.Item id="mini-footer-item" className="p-1 mb-1 me-2 d-flex align-items-center">
+                    <a>Centro assistenza</a>
                   </ListGroup.Item>
-                  <ListGroup.Item id="footer-item" className="p-1 mb-1 me-2 d-flex align-items-center">
+                  <ListGroup.Item id="mini-footer-item" className="p-1 mb-1 me-2 d-flex align-items-center">
                     <DropdownButton drop="down" id="dropdown-basic-button" title="Privacy e condizioni ">
                       <Dropdown.Item id="first-drop" href="#/action-1">
                         Informativa sulla privacy
@@ -57,19 +55,19 @@ const MiniFooter = () => {
             <Row className="justify-content-center">
               <Col sm={12} className="d-flex  flex-wrap justify-content-center p-0">
                 <ListGroup horizontal className=" p-0">
-                  <ListGroup.Item id="footer-item" className="p-1 mb-1 me-2">
-                    <a id="mini-footer-item">Opzioni per gli annunci pubblicitari</a>
+                  <ListGroup.Item id="mini-footer-item" className="p-1 mb-1 me-2">
+                    <a>Opzioni per gli annunci pubblicitari</a>
                   </ListGroup.Item>
                 </ListGroup>
               </Col>
             </Row>
             <Row className="justify-content-center">
-              <Col sm={12} className="d-flex  flex-wrap justify-content-center p-0">
+              <Col sm={12} md={8} className="d-flex  flex-wrap justify-content-center p-0">
                 <ListGroup horizontal className=" p-0 ">
-                  <ListGroup.Item id="footer-item" className="p-1 mb-1 me-2 d-flex align-items-center">
-                    <a id="mini-footer-item"> Pubblicità</a>
+                  <ListGroup.Item id="mini-footer-item" className="p-1 mb-1 me-2 d-flex align-items-center">
+                    <a> Pubblicità</a>
                   </ListGroup.Item>
-                  <ListGroup.Item id="footer-item" className="p-1 mb-1 me-2 d-flex align-items-center">
+                  <ListGroup.Item id="mini-footer-item" className="p-1 mb-1 me-2 d-flex align-items-center">
                     <DropdownButton drop="down" id="dropdown-basic-button" title="Servizi alle aziende" className="">
                       <Dropdown.Item id="first-drop" className="p-0 ps-3" href="#/action-1">
                         <div id="drop-div" className="p-0 m-0">
@@ -129,11 +127,11 @@ const MiniFooter = () => {
             <Row className="justify-content-center">
               <Col sm={12} className="d-flex  flex-wrap justify-content-center p-0">
                 <ListGroup horizontal className=" p-0">
-                  <ListGroup.Item id="footer-item" className="p-1 mb-1 me-2">
-                    <a id="mini-footer-item">Scarica l'app Linkedln</a>
+                  <ListGroup.Item id="mini-footer-item" className="p-1 mb-1 me-2">
+                    <a>Scarica l'app Linkedln</a>
                   </ListGroup.Item>
-                  <ListGroup.Item id="footer-item" className="p-1 mb-1 me-2">
-                    <a id="mini-footer-item">Altro</a>
+                  <ListGroup.Item id="mini-footer-item" className="p-1 mb-1 me-2">
+                    <a>Altro</a>
                   </ListGroup.Item>
                 </ListGroup>
               </Col>
