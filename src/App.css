@@ -212,3 +212,10 @@
 #dropdown-basic-button {
   font-size: 13px !important;
 }
+.fw-p {
+  font-weight: 500;
+}
+.fw-small {
+  color: gray;
+  font-weight: 350;
+}

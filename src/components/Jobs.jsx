@@ -3,6 +3,7 @@ import HomeFirstAsideLeftComponent from "./HomeFirstAsideLeftComponent";
 import JobAsideSecond from "./JobAsideSecond";
 import MiniFooter from "./MiniFooter";
 import ProfileCard from "./ProfileCard";
+import RicercheLavoro from "./RicercheLavoro";
 
 const Jobs = () => {
   return (
@@ -18,6 +19,7 @@ const Jobs = () => {
         <Col md={8} className=" p-0">
           <div className="  d-flex flex-column gap-2  ">
             <ProfileCard />
+            <RicercheLavoro />
           </div>
         </Col>
       </Row>
