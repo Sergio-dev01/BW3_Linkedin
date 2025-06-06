@@ -27,12 +27,12 @@ const TopBar = function () {
   console.log(myProfile.image);
   return (
     <Container fluid className="navbar-container">
-      <Row className="justify-content-center">
-        <Col lg={10} md={11} className="p-0">
-          <Navbar expand="lg" className="navbar navbar-expand-lg py-0 ">
-            <div className="d-flex w-100 align-items-center left-navbar ">
-              <Row className="w-100 align-items-center">
-                <Col xs={12} md={6} className="d-flex align-items-center mb-2 mb-md-0 gap-5">
+      <Row className="justify-content-center ">
+        <Col lg={10} md={6} className="p-0">
+          <Navbar expand="lg" className="navbar navbar-expand-lg py-0 h-100 ">
+            <div className="d-flex w-100 align-items-center left-navbar  ">
+              <Row className="w-100 align-items-center justify-content-sm-center">
+                <Col xs={7} md={10} lg={6} className="d-flex align-items-center  mb-md-0 gap-3">
                   <Navbar.Brand href="#" className="me-2">
                     <Link to="/" style={{ textDecoration: "none" }}>
                       {" "}
@@ -54,12 +54,79 @@ const TopBar = function () {
                       <Search className="d-sm-block d-xxl-none fs-3" />
                     </Form>
                   </div>
+                  <div className="d-lg-none d-sm-block">
+                    <Link to="/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="#666666"
+                        width="24"
+                        height="24"
+                        className="mercado-match mx-2"
+                        focusable="false"
+                      >
+                        <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z" />
+                      </svg>
+                    </Link>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="#666666"
+                      className="mercado-match mx-2"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                    </svg>
+
+                    <Link to="/jobs">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        data-supported-dps="24x24"
+                        fill="#666666"
+                        className="mercado-match mx-2"
+                        width="24"
+                        height="24"
+                        focusable="false"
+                      >
+                        <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                      </svg>
+                    </Link>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="#666666"
+                      className="mercado-match mx-2"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="#666666"
+                      className="mercado-match mx-2"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                    </svg>
+                  </div>
                 </Col>
 
                 <Col xs={12} md={6} className="d-flex justify-content-md-end justify-content-center align-items-center">
                   <Navbar.Collapse id="navbarSupportedContent">
                     <Nav className="me-auto mb-2 mb-lg-0 d-flex flex-row flex-md-nowrap justify-content-center justify-content-md-end w-100">
-                      <Nav.Link className="text-dark fs-custom pb-0 navbar-icons active" href="#">
+                      <Nav.Link className="text-dark fs-custom pb-0 navbar-icons active m-0" href="#">
                         <div className="d-flex flex-column justify-content-center align-items-center">
                           <Link to="/" style={{ textDecoration: "none" }}>
                             <svg
@@ -68,13 +135,13 @@ const TopBar = function () {
                               fill="#666666"
                               width="24"
                               height="24"
-                              className="mercado-match"
+                              className="mercado-match "
                               focusable="false"
                             >
                               <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z" />
                             </svg>
                           </Link>
-                          <p>Home</p>
+                          <p className="m-0">Home</p>
                         </div>
                       </Nav.Link>
                       <Nav.Link className="text-dark fs-custom pb-0 navbar-icons" href="#">
@@ -202,8 +269,8 @@ const TopBar = function () {
                 </Col>
               </Row>
             </div>
-            <div className="d-flex align-items-center gap-4" style={{ width: "400px" }}>
-              <Dropdown align="end">
+            <div className="d-flex align-items-center gap-4 " style={{ width: "400px" }}>
+              <Dropdown align="end" className="d-sm-none d-lg-block">
                 <Dropdown.Toggle
                   variant="link"
                   id="dropdown-user"
@@ -306,9 +373,9 @@ const TopBar = function () {
                   </div>
                 </Dropdown.Menu>
               </Dropdown>
-              <Nav.Link className="d-md-none d-lg-block">
-                <p className="business text-center p-3 pb-0" style={{ width: "10rem" }}>
-                  Prova Premium per 0 <br /> EUR
+              <Nav.Link className="d-sm-none d-lg-block ">
+                <p className="business text-center ps-3 pb-0 mb-0 ">
+                  Prova Premium per 0 <br></br>EUR
                 </p>
               </Nav.Link>
             </div>
